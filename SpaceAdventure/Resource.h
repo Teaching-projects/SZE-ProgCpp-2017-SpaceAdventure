@@ -1,15 +1,15 @@
 #ifndef RESOURCE_H
 #define RESOURCE_H
 
-#define MAX_RESOURCE_QUANTITY 20
-
 enum ResourceType {
+	empty,
 	hydrogen,
 	oxygen,
 	iron
 };
 
 struct Resource {
+	static const int maxResourceQuantity = 20;
 	ResourceType type;
 	int resourceQuantity;
 };
