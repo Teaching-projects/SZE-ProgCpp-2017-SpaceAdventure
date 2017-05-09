@@ -1,10 +1,11 @@
 #ifndef GASPLANET_H
 #define GASPLANET_H
 
-#include "SpaceObject.h"
+#include "Planet.h"
 
-class GasPlanet : SpaceObject {
-
+class GasPlanet : Planet {
+	public:
+		GasPlanet(bool mined);
 };
 
 #endif

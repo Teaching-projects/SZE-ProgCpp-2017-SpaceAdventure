@@ -6,6 +6,8 @@
 class SolarSystem {
 	static const int maxSpaceObjects = 3;
 	SpaceObject objects[maxSpaceObjects];
+public:
+	SolarSystem(SpaceObject objects[]);
 };
 
 #endif

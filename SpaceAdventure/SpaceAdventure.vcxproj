@@ -130,20 +130,26 @@
     <ClCompile Include="GardenPlanet.cpp" />
     <ClCompile Include="GasPlanet.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Planet.cpp" />
+    <ClCompile Include="Randomizer.cpp" />
     <ClCompile Include="Resource.cpp" />
     <ClCompile Include="RockyPlanet.cpp" />
     <ClCompile Include="Ship.cpp" />
     <ClCompile Include="SolarSystem.cpp" />
     <ClCompile Include="SpaceObject.cpp" />
+    <ClCompile Include="SpaceStation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GardenPlanet.h" />
     <ClInclude Include="GasPlanet.h" />
+    <ClInclude Include="Planet.h" />
+    <ClInclude Include="Randomizer.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="RockyPlanet.h" />
     <ClInclude Include="Ship.h" />
     <ClInclude Include="SolarSystem.h" />
     <ClInclude Include="SpaceObject.h" />
+    <ClInclude Include="SpaceStation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
