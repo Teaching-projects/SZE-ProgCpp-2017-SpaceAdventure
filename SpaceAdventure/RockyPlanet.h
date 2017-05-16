@@ -1,10 +1,11 @@
 #ifndef ROCKYPLANET_H
 #define ROCKYPLANET_H
 
-#include "SpaceObject.h"
+#include "Planet.h"
 
-class RockyPlanet : SpaceObject {
-
+class RockyPlanet : Planet {
+	public:
+		RockyPlanet(bool mined);
 };
 
 #endif

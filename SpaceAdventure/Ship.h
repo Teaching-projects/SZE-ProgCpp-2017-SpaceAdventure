@@ -4,11 +4,14 @@
 #include "Resource.h"
 
 class Ship {
-	int fuel = 100;
-	int oxygen = 100;
-	int hull = 100;
-	static const int maximumCargo = 2;
-	ResourceType cargo[maximumCargo];
+		int fuel;
+		int oxygen;
+		int hull;
+		static const int maximumCargo = 2;
+		ResourceType cargo[maximumCargo];
+
+	public:
+		Ship(int fuel, int oxygen, int hull);
 };
 
 #endif

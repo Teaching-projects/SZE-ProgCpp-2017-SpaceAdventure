@@ -4,8 +4,11 @@
 #include "SpaceObject.h"
 
 class SolarSystem {
-	static const int maxSpaceObjects = 3;
-	SpaceObject objects[maxSpaceObjects];
+		static const int maxSpaceObjects = 3;
+		SpaceObject objects[maxSpaceObjects];
+	public:
+		SolarSystem(SpaceObject objects[]);
+		static int getMaxSpaceObjects();
 };
 
 #endif
