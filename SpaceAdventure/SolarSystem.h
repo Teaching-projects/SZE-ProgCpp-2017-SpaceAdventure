@@ -9,6 +9,7 @@ class SolarSystem {
 	public:
 		SolarSystem(SpaceObject objects[]);
 		static int getMaxSpaceObjects();
+		SpaceObject& getSpaceObject(int);
 };
 
 #endif

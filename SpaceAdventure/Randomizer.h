@@ -8,10 +8,11 @@
 
 class Randomizer {
 		static const int maxRange = 100;
-		static const int GasPlanetThreshold = 30;
-		static const int RockyPlanetThreshold = 50;
-		static const int GardenPlanetThreshold = 60;
-		static const int SpaceStationThreshold = 65;
+		static const int spawnThreshold = 60;
+		static const int gasPlanetThreshold = 30;
+		static const int rockyPlanetThreshold = 50;
+		static const int gardenPlanetThreshold = 60;
+		static const int spaceStationThreshold = 65;
 	public:
 		void randomizeSolarSystem(SolarSystem system);
 		void randomizeSpaceObject(SpaceObject object);
