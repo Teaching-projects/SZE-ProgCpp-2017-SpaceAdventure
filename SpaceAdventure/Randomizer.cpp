@@ -4,11 +4,15 @@
 void Randomizer::randomizeSolarSystem(SolarSystem s)
 {
 	srand(time(NULL));
+	SpaceObject so;
+	SpaceObject& ref=so;
+
 	for (int i = 0; i < SolarSystem::getMaxSpaceObjects(); i++) {
 		int r = rand() % maxRange + 1;
 
 		if (r < spawnThreshold) {
-			Randomizer::randomizeSpaceObject(s.getSpaceObject(i));
+			Randomizer::randomizeSpaceObject(ref);
+			s.addSpaceObject(so);
 		}
 	}
 }
