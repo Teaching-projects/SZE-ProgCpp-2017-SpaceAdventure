@@ -1,6 +1,6 @@
 #include "SolarSystem.h"
 
-SolarSystem::SolarSystem(SpaceObject objects[])
+SolarSystem::SolarSystem(std::vector<SpaceObject> objects)
 {
 	objects = objects;
 }
@@ -12,7 +12,7 @@ int SolarSystem::getMaxSpaceObjects()
 
 SpaceObject & SolarSystem::getSpaceObject(int i)
 {
-	return objects[i];
+	return objects->at(i);
 }
 
 void SolarSystem::addSpaceObject(SpaceObject so)

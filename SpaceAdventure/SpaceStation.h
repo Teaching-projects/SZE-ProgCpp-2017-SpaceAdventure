@@ -3,7 +3,7 @@
 
 #include "SpaceObject.h"
 
-class SpaceStation : SpaceObject {
+class SpaceStation : public SpaceObject {
 	bool visited;
 public:
 	SpaceStation();
