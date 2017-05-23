@@ -4,9 +4,9 @@
 #include "SpaceObject.h"
 
 class Planet : SpaceObject {
-		bool mined;
-	public:
-		Planet(bool mined);
+	bool mined;
+public:
+	Planet(bool mined);
 };
 
 #endif
