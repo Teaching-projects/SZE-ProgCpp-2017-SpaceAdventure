@@ -4,3 +4,4 @@ SpaceStation::SpaceStation()
 {
 	visited = false;
 }
+

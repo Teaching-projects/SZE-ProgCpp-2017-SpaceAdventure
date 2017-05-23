@@ -1,5 +1,4 @@
 #include "Randomizer.h"
-#include "Randomizer.h"
 
 void Randomizer::randomizeSolarSystem(SolarSystem s)
 {

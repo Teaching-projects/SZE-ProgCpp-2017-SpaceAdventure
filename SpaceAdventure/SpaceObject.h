@@ -2,7 +2,6 @@
 #define SPACEOBJECT_H
 
 class SpaceObject {
-	
 };
 
 #endif

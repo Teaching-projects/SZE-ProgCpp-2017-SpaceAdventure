@@ -1,5 +1,5 @@
 #include "RockyPlanet.h"
 
-RockyPlanet::RockyPlanet(bool mined) : Planet(mined)
+RockyPlanet::RockyPlanet(bool mined): Planet(mined)
 {
 }

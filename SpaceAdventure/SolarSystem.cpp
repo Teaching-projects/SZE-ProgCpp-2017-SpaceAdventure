@@ -10,7 +10,7 @@ int SolarSystem::getMaxSpaceObjects()
 	return maxSpaceObjects;
 }
 
-SpaceObject & SolarSystem::getSpaceObject(int i)
+SpaceObject& SolarSystem::getSpaceObject(int i)
 {
 	return objects[i];
 }
