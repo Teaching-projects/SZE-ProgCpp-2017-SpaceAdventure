@@ -1,8 +1,7 @@
 #include "SolarSystem.h"
 
-SolarSystem::SolarSystem(std::vector<SpaceObject> objects)
+SolarSystem::SolarSystem(std::string s): objects(), name(s)
 {
-	objects = objects;
 }
 
 int SolarSystem::getMaxSpaceObjects()

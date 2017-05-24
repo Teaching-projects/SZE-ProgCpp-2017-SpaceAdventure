@@ -18,8 +18,8 @@ class Randomizer {
 		static const int gardenPlanetThreshold = 60;
 		static const int spaceStationThreshold = 65;
 	public:
-		void randomizeSolarSystem(SolarSystem);
-		void randomizeSpaceObject(SpaceObject, int);
+		static void randomizeSolarSystem(SolarSystem);
+		static void randomizeSpaceObject(SpaceObject, int);
 	};
 
 #endif

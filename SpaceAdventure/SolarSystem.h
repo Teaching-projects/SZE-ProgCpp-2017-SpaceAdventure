@@ -7,8 +7,9 @@
 class SolarSystem {
 		static const int maxSpaceObjects = 3;
 		std::vector<SpaceObject> objects[maxSpaceObjects];
+		std::string name;
 	public:
-		SolarSystem(std::vector<SpaceObject>);
+		SolarSystem(std::string);
 		static int getMaxSpaceObjects();
 		SpaceObject& getSpaceObject(int);
 		void addSpaceObject(SpaceObject);
