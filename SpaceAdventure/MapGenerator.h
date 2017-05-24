@@ -1,12 +1,12 @@
 #ifndef MAPGENERATOR_H
 #define MAPGENERATOR_H
 
-#include <map>
 #include "Randomizer.h"
+#include <list>
 
 class MapGenerator {
 public:
-	static std::map<SolarSystem, int> generateMap();
+	static std::map<std::string, SolarSystem> generateMap(std::list<std::string>);
 };
 
 
