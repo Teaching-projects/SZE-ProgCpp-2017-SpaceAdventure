@@ -1,0 +1,29 @@
+﻿Build started 2017. 05. 25. 15:25:05.
+     1>Project "E:\c++\SZE-ProgCpp-2017-SpaceAdventure\SpaceAdventure\SpaceAdventure.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         E:\Programfájlok (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" /errorReport:prompt /clr:nostdlib Controller.cpp Main.cpp
+         Controller.cpp
+     1>Controller.cpp(28): warning C4390: ';': empty controlled statement found; is this the intent?
+         Main.cpp
+         Generating Code...
+       Link:
+         E:\Programfájlok (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\c++\SZE-ProgCpp-2017-SpaceAdventure\x64\Debug\SpaceAdventure.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"E:\c++\SZE-ProgCpp-2017-SpaceAdventure\x64\Debug\SpaceAdventure.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X64 x64\Debug\Controller.obj
+         x64\Debug\GardenPlanet.obj
+         x64\Debug\GasPlanet.obj
+         x64\Debug\Main.obj
+         x64\Debug\MapGenerator.obj
+         x64\Debug\Planet.obj
+         x64\Debug\Randomizer.obj
+         x64\Debug\Resource.obj
+         x64\Debug\RockyPlanet.obj
+         x64\Debug\Ship.obj
+         x64\Debug\SolarSystem.obj
+         x64\Debug\SpaceObject.obj
+         x64\Debug\SpaceStation.obj
+         "x64\Debug\.NETFramework,Version=v4.5.2.AssemblyAttributes.obj"
+         SpaceAdventure.vcxproj -> E:\c++\SZE-ProgCpp-2017-SpaceAdventure\x64\Debug\SpaceAdventure.exe
+     1>Done Building Project "E:\c++\SZE-ProgCpp-2017-SpaceAdventure\SpaceAdventure\SpaceAdventure.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.15
