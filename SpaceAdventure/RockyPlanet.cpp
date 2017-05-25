@@ -2,4 +2,5 @@
 
 RockyPlanet::RockyPlanet(Resource res) : Planet(res)
 {
+
 }

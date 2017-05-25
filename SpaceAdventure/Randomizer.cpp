@@ -7,17 +7,17 @@ void Randomizer::randomizeSolarSystem(SolarSystem s)
 	SpaceObject so;
 	SpaceObject& ref=so;
 
-	for (int i = 0; i < SolarSystem::getMaxSpaceObjects(); i++) {
+	for (int i = 0; i < SolarSystem::getMaxSpaceObjects(); i++) {					//végigiterálok a lehetséges objektumokon
 		int r = rand() % maxRange + 1;
 
-		if (r < spaceStationThreshold) {
+		if (r < spaceStationThreshold) {											//megnézem a legmagasabb határt, hogy kerüljön-e egyáltalán objektum erre a helyre
 			Randomizer::randomizeSpaceObject(ref, r);
 			s.addSpaceObject(so);
 		}
 	}
 }
 
-void Randomizer::randomizeSpaceObject(SpaceObject o, int r)
+void Randomizer::randomizeSpaceObject(SpaceObject o, int r)							//kiválasztom miylen objektumot generáljak
 {
 	if (r < gardenPlanetThreshold) {
 		int resourceQuantity= rand() % Resource::maxResourceQuantity + 1;

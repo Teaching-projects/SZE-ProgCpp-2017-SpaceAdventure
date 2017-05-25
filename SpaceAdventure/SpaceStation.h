@@ -4,9 +4,9 @@
 #include "SpaceObject.h"
 
 class SpaceStation : public SpaceObject {
-	bool visited;
-public:
-	SpaceStation();
+		bool visited;
+	public:
+		SpaceStation();
 };
 
 #endif

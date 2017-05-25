@@ -2,6 +2,7 @@
 
 Ship::Ship(int fuel, int oxygen, int hull, int upgrade, std::string location) : fuel(fuel), oxygen(oxygen), hull(hull), upgradeLevel(upgrade), location(location)
 {
+
 }
 
 std::string Ship::getLocation()
