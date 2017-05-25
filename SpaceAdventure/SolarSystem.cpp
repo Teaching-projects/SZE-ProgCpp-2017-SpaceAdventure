@@ -1,8 +1,7 @@
 #include "SolarSystem.h"
 
-SolarSystem::SolarSystem(SpaceObject objects[])
+SolarSystem::SolarSystem(std::string s): objects(), name(s), neighbours()
 {
-	objects = objects;
 }
 
 int SolarSystem::getMaxSpaceObjects()
@@ -12,10 +11,15 @@ int SolarSystem::getMaxSpaceObjects()
 
 SpaceObject & SolarSystem::getSpaceObject(int i)
 {
-	return objects[i];
+	return objects->at(i);
 }
 
 void SolarSystem::addSpaceObject(SpaceObject so)
 {
 	this->objects->push_back(so);
+}
+
+void SolarSystem::addNeighbour(std::string s, int i)
+{
+	neighbours.insert(std::pair<std::string, int>(s, i));
 }

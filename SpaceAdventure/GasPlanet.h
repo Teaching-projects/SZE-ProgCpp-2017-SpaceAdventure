@@ -3,9 +3,9 @@
 
 #include "Planet.h"
 
-class GasPlanet : Planet {
+class GasPlanet : public Planet {
 	public:
-		GasPlanet(bool mined);
+		GasPlanet(Resource);
 };
 
 #endif

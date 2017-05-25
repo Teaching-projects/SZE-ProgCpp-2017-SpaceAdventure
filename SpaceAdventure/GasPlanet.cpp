@@ -1,5 +1,6 @@
 #include "GasPlanet.h"
 
-GasPlanet::GasPlanet(bool mined) : Planet(mined)
+GasPlanet::GasPlanet(Resource r) : Planet(r)
 {
+
 }

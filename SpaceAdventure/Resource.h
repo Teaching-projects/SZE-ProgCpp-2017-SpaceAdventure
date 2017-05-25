@@ -9,9 +9,11 @@ enum ResourceType {
 };
 
 struct Resource {
-	static const int maxResourceQuantity = 20;
-	ResourceType type;
-	int resourceQuantity;
+		static const int maxResourceQuantity = 20;
+		ResourceType type;
+		int resourceQuantity;
+	public:
+		Resource(ResourceType, int);
 };
 
 #endif

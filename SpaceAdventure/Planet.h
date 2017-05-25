@@ -2,11 +2,13 @@
 #define PLANET_H
 
 #include "SpaceObject.h"
+#include "Resource.h"
 
-class Planet : SpaceObject {
+class Planet : public SpaceObject {
 	bool mined;
+	Resource resources;
 public:
-	Planet(bool mined);
+	Planet(Resource);
 };
 
 #endif

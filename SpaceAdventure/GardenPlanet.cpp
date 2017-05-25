@@ -1,5 +1,5 @@
 #include "GardenPlanet.h"
 
-GardenPlanet::GardenPlanet(bool mined) : Planet(mined)
+GardenPlanet::GardenPlanet(Resource res) : Planet(res)
 {
 }
