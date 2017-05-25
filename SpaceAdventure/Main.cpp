@@ -47,4 +47,6 @@ int main(int argc, char** argv) {
 	Controller controller = Controller(ref, playerShip);
 
 	controller.mainMenu();
+
+	return 0;
 }
