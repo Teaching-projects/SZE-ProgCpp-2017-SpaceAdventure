@@ -2,4 +2,5 @@
 
 Planet::Planet(Resource res) : mined(mined), resources(res)
 {
+
 }

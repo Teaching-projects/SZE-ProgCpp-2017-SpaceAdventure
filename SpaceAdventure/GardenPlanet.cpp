@@ -2,4 +2,5 @@
 
 GardenPlanet::GardenPlanet(Resource res) : Planet(res)
 {
+
 }

@@ -5,10 +5,10 @@
 #include "Resource.h"
 
 class Planet : public SpaceObject {
-	bool mined;
-	Resource resources;
-public:
-	Planet(Resource);
+		bool mined;
+		Resource resources;
+	public:
+		Planet(Resource);
 };
 
 #endif

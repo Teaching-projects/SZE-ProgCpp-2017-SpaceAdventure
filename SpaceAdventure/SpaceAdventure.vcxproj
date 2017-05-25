@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Controller.cpp" />
     <ClCompile Include="GardenPlanet.cpp" />
     <ClCompile Include="GasPlanet.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -141,6 +142,7 @@
     <ClCompile Include="SpaceStation.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Controller.h" />
     <ClInclude Include="GardenPlanet.h" />
     <ClInclude Include="GasPlanet.h" />
     <ClInclude Include="MapGenerator.h" />
