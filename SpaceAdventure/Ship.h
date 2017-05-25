@@ -14,6 +14,7 @@ class Ship {
 		std::string location;
 	public:
 		Ship(int fuel, int oxygen, int hull, int upgrade, std::string location);
+		std::string getLocation();
 };
 
 #endif

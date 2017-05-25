@@ -1,5 +1,9 @@
 #include "Controller.h"
 
+Controller::Controller(std::map<std::string, SolarSystem> map, Ship ship): starMap(map), ship(ship)
+{
+}
+
 void Controller::mainMenu()
 {
 	std::cout << "Space Adventure" << "\n\n";
@@ -26,4 +30,32 @@ void Controller::mainMenu()
 		}
 	}
 	if (!c.compare("1"));
+}
+
+void Controller::SolarMenu()
+{
+	if (!ship.getLocation().compare("Nap")) {
+		std::cout << "\n" << "Gratulálunk! Visszatalált a Naprendszerbe!" << "\n";
+		std::cout << "Nyomjon ENTER-t a kilépéshez." << "\n";
+
+		int c;
+		std::cin >> c;
+	}
+	else {
+		std::cout << "\n" << "Jelenleg a(z)" << ship.getLocation() << "rendszerben tartózkodik." << "\n";
+		std::cout << "Mit szeretne tenni?" << "\n\n";
+
+		int n = 0;
+		SolarSystem s = starMap[ship.getLocation()];
+		std::vector<SpaceObject> o = s.getObjects();
+		std::map<std::string, int> neighbours = s.getNeighbours();
+
+		for (std::vector<SpaceObject>::iterator it = o.begin(); it != o.end(); it++) {
+
+		}
+
+		for (std::map<std::string, int>::iterator it = neighbours.begin(); it != neighbours.end(); it++) {
+			
+		}
+	}
 }

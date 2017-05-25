@@ -1,9 +1,9 @@
-﻿Build started 2017. 05. 25. 15:25:05.
+﻿Build started 2017. 05. 25. 16:03:37.
      1>Project "E:\c++\SZE-ProgCpp-2017-SpaceAdventure\SpaceAdventure\SpaceAdventure.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          E:\Programfájlok (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" /errorReport:prompt /clr:nostdlib Controller.cpp Main.cpp
          Controller.cpp
-     1>Controller.cpp(28): warning C4390: ';': empty controlled statement found; is this the intent?
+     1>Controller.cpp(32): warning C4390: ';': empty controlled statement found; is this the intent?
          Main.cpp
          Generating Code...
        Link:
@@ -26,4 +26,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.15
+Time Elapsed 00:00:02.65

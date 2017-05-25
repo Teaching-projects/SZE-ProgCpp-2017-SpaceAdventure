@@ -3,11 +3,12 @@
 
 #include <vector>
 #include <map>
+#include <list>
 #include "SpaceObject.h"
 
 class SolarSystem {
 		static const int maxSpaceObjects = 3;
-		std::vector<SpaceObject> objects[maxSpaceObjects];
+		std::vector<SpaceObject> objects;
 		std::string name;
 		std::map<std::string, int> neighbours;
 	public:
@@ -16,7 +17,8 @@ class SolarSystem {
 		SpaceObject& getSpaceObject(int);
 		void addSpaceObject(SpaceObject);
 		void addNeighbour(std::string, int);
-
+		std::map<std::string, int> getNeighbours();
+		std::vector<SpaceObject> getObjects();
 };
 
 #endif

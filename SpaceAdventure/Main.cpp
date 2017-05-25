@@ -38,11 +38,12 @@ int main(int argc, char** argv) {
 	iMap["Ogma"] = eltaninMap;
 	iMap["Nap"] = eltaninMap;
 
+
 	starMap = MapGenerator::generateMap(iMap);
 
 	Ship playerShip = Ship(100, 100, 100, 0, "Eltanin");
 
-
+	Controller controller = Controller(starMap, playerShip);
 
 	/*bool ok = false;
 	char c;
@@ -58,5 +59,5 @@ int main(int argc, char** argv) {
 		}
 	}*/
 
-	Controller::mainMenu();
+	controller.mainMenu();
 }

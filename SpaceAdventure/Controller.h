@@ -3,10 +3,20 @@
 
 #include <iostream>
 #include <string>
+#include <map>
+#include <stdlib.h>
+
+#include "SolarSystem.h"
+#include "Ship.h"
 
 class Controller {
+	std::map<std::string, SolarSystem> starMap;
+	Ship ship;
 public:
-	static void mainMenu();
+	Controller(std::map<std::string, SolarSystem>, Ship);
+	void mainMenu();
+	void SolarMenu();
+	void ObjectMenu();
 };
 
 #endif
