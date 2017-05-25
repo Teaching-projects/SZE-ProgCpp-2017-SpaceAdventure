@@ -1,6 +1,6 @@
 #include "MapGenerator.h"
 
-//std::string names[] = { "Eltanin", "Avior", "Lesath", "Seginus", "Ogma", "Nap" };
+//std::string names[] = { "Eltanin", "Avior", "Seginus", "Lesath", "Ogma", "Nap" };
 
 std::map<std::string, SolarSystem> MapGenerator::generateMap(initMap iMap)
 {

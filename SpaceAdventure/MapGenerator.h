@@ -10,7 +10,7 @@ class MapGenerator {
 	//static const int numberOfNames = 6;
 	//std::string names[numberOfNames];
 public:
-	std::map<std::string, SolarSystem> generateMap(std::map<std::string, std::map<std::string, int>>);
+	static std::map<std::string, SolarSystem> generateMap(std::map<std::string, std::map<std::string, int>>);
 };
 
 
