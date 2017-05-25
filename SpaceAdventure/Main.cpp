@@ -32,18 +32,19 @@ int main(int argc, char** argv) {
 	napMap["Lesath"] = 22;
 
 	iMap["Eltanin"] = eltaninMap;
-	iMap["Avior"] = eltaninMap;
-	iMap["Seginus"] = eltaninMap;
-	iMap["Lesath"] = eltaninMap;
-	iMap["Ogma"] = eltaninMap;
-	iMap["Nap"] = eltaninMap;
+	iMap["Avior"] = aviorMap;
+	iMap["Seginus"] = seginusMap;
+	iMap["Lesath"] = lesathMap;
+	iMap["Ogma"] = ogmaMap;
+	iMap["Nap"] = napMap;
 
 
 	starMap = MapGenerator::generateMap(iMap);
+	std::map<std::string, SolarSystem>& ref = starMap;
 
 	Ship playerShip = Ship(100, 100, 100, 0, "Eltanin");
 
-	Controller controller = Controller(starMap, playerShip);
+	Controller controller = Controller(ref, playerShip);
 
 	/*bool ok = false;
 	char c;

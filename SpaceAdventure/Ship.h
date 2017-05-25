@@ -15,6 +15,7 @@ class Ship {
 	public:
 		Ship(int fuel, int oxygen, int hull, int upgrade, std::string location);
 		std::string getLocation();
+		bool jump(std::string, int);
 };
 
 #endif

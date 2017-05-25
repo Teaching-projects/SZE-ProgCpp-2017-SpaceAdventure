@@ -1,6 +1,6 @@
 #include "Controller.h"
 
-Controller::Controller(std::map<std::string, SolarSystem> map, Ship ship): starMap(map), ship(ship)
+Controller::Controller(std::map<std::string, SolarSystem>& map, Ship ship): starMap(map), ship(ship)
 {
 }
 
@@ -22,40 +22,75 @@ void Controller::mainMenu()
 	while (!ok) {
 		std::cin >> c;
 
-		if (!c.compare("1") || !c.compare("2") || !c.compare("q")) {
+		if (!c.compare("1")) {
+			ok = true;
+			SolarMenu();
+		}
+		else if (!c.compare("2") || !c.compare("q")) {
 			ok = true;
 		}
 		else {
 			std::cout << "\n" << "Érvénytelen bemenet." << "\n";
 		}
 	}
-	if (!c.compare("1"));
 }
 
 void Controller::SolarMenu()
 {
 	if (!ship.getLocation().compare("Nap")) {
 		std::cout << "\n" << "Gratulálunk! Visszatalált a Naprendszerbe!" << "\n";
-		std::cout << "Nyomjon ENTER-t a kilépéshez." << "\n";
+		std::cout << "Írjon be egy karaktert a kilépéshez." << "\n";
 
-		int c;
+		char c;
 		std::cin >> c;
 	}
 	else {
-		std::cout << "\n" << "Jelenleg a(z)" << ship.getLocation() << "rendszerben tartózkodik." << "\n";
+		std::cout << "\n" << "Jelenleg a(z) " << ship.getLocation() << " rendszerben tartózkodik." << "\n";
 		std::cout << "Mit szeretne tenni?" << "\n\n";
 
+		//char c;
+		//std::cin >> c;
+
+		SolarSystem& s = starMap.at(ship.getLocation());
+		std::map<std::string, int>& neighbours = s.getNeighbours();
+		//std::vector<SpaceObject> o = s.getObjects();
+
+		//for (std::vector<SpaceObject>::iterator it = o.begin(); it != o.end(); it++) {
+
+		//}
+
 		int n = 0;
-		SolarSystem s = starMap[ship.getLocation()];
-		std::vector<SpaceObject> o = s.getObjects();
-		std::map<std::string, int> neighbours = s.getNeighbours();
-
-		for (std::vector<SpaceObject>::iterator it = o.begin(); it != o.end(); it++) {
-
-		}
-
+		//int size = neighbours.size;
+		//std::string* names= new std::string[size];
+		std::vector<std::string> names;
 		for (std::map<std::string, int>::iterator it = neighbours.begin(); it != neighbours.end(); it++) {
-			
+			names.push_back(it->first);
+			std::cout << "\n" << n+1 << ": Ugrás a(z) " << names[n] << " rendszerbe " << it->second << " költséggel.\n";
+			n++;
 		}
+
+		bool ok = false;
+		std::string str;
+		int i = 0;
+		while (!ok) {
+			std::cin >> str;
+
+			if (!str.compare("q")) {
+				ok = true;
+			}
+			else if (isdigit(str[0]) && ( (i=std::stoi(str)) > 0 ) && (i<=n)) {
+				if (ship.jump(names[i-1], neighbours[names[i-1]])) {
+					ok = true;
+					SolarMenu();
+				}
+				else {
+					std::cout << "\n" << "Nincs elég nyersanyag az ugrás végrehajtásához." << "\n";
+				}
+			}
+			else {
+				std::cout << "\n" << "Érvénytelen bemenet." << "\n";
+			}
+		}
+		//delete[] names;*/
 	}
 }

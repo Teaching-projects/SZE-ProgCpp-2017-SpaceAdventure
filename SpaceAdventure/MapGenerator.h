@@ -3,6 +3,8 @@
 
 #include "Randomizer.h"
 #include <list>
+#include <iostream>
+//#include <string>
 
 typedef std::map<std::string, std::map<std::string, int>> initMap;
 
@@ -10,7 +12,7 @@ class MapGenerator {
 	//static const int numberOfNames = 6;
 	//std::string names[numberOfNames];
 public:
-	static std::map<std::string, SolarSystem> generateMap(std::map<std::string, std::map<std::string, int>>);
+	static std::map<std::string, SolarSystem> generateMap(initMap);
 };
 
 

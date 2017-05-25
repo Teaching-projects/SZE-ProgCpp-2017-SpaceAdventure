@@ -5,6 +5,7 @@
 #include <map>
 #include <list>
 #include "SpaceObject.h"
+#include <string>
 
 class SolarSystem {
 		static const int maxSpaceObjects = 3;
